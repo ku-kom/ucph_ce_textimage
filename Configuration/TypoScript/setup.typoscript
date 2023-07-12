@@ -9,6 +9,10 @@ tt_content.ucph_ce_textimage {
         key.field = imageorient
         8 = TEXT
         8.value = TextpicBelow
+        17 = TEXT
+        17.value = TextpicFloatRight
+        18 = TEXT
+        18.value = TextpicFloatLeft
         25 = TEXT
         25.value = TextpicRight
         26 = TEXT
@@ -32,13 +36,13 @@ tt_content.ucph_ce_textimage {
     }
 
     templateRootPaths {
-        20 = EXT:ucph_ce_textimage/Resources/Private/Templates/
+        110 = EXT:ucph_ce_textimage/Resources/Private/Templates/
     }
     partialRootPaths {
-        20 = EXT:ucph_ce_textimage/Resources/Private/Partials/
+        110 = EXT:ucph_ce_textimage/Resources/Private/Partials/
     }
     layoutRootPaths {
-        20 = EXT:ucph_base_config/Resources/Private/Layouts/
+        110 = EXT:ucph_base_config/Resources/Private/Layouts/
     }
 
 

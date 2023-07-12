@@ -2,7 +2,30 @@
 <f:layout name="Default" />
 <f:section name="Main">
     <div id="c{data.uid}" class="ctype_{data.CType}">
-        <f:format.html>{data.bodytext}</f:format.html>
+        <div class="textpic textpic-right">
+            <div class="textpic-item textpic-gallery">
+                <f:if condition="{images}">
+                    <f:then>
+                        <f:for each="{images}" as="image">
+                            <figure class="image">
+                                <f:image src="{f:uri.image(image: image)}" alt="{image.alternative}" />
+                                <f:if condition="{image.description}">
+                                    <figcaption>{image.description}</figcaption>
+                                </f:if>
+                            </figure>
+                        </f:for>
+                    </f:then>
+                </f:if>
+            </div>
+            <div class="textpic-item textpic-text">
+                <f:if condition="{data.header}">
+                    <h2>
+                        <f:format.htmlspecialchars doubleEncode="false">{data.header}</f:format.htmlspecialchars>
+                    </h2>
+                </f:if>
+                <f:format.html>{data.bodytext}</f:format.html>
+            </div>
+        </div>
     </div>
 </f:section>
 

@@ -1,0 +1,35 @@
+mod.wizards.newContentElement.wizardItems {
+  // add the content element to the tab "common"
+  common {
+    elements {
+      ucph_ce_textimage {
+        iconIdentifier = ucph_ce_textimage_icon
+        title = LLL:EXT:ucph_ce_textimage/Resources/Private/Language/locallang_be.xlf:ucph_ce_textimage_title
+        description = LLL:EXT:ucph_ce_textimage/Resources/Private/Language/locallang_be.xlf:ucph_ce_textimage_desc
+        tt_content_defValues {
+          CType = ucph_ce_textimage
+        }
+      }
+    }
+    show := addToList(ucph_ce_textimage)
+  }
+}
+
+
+mod.wizards.newContentElement.wizardItems {
+  // add the content element to the tab "Image"
+  image {
+    header = LLL:EXT:ucph_ce_textimage/Resources/Private/Language/locallang_be.xlf:ucph_ce_textimage_wizard_tab
+    elements {
+      ucph_ce_textimage {
+        iconIdentifier = ucph_ce_textimage_icon
+        title = LLL:EXT:ucph_ce_textimage/Resources/Private/Language/locallang_be.xlf:ucph_ce_textimage_title
+        description = LLL:EXT:ucph_ce_textimage/Resources/Private/Language/locallang_be.xlf:ucph_ce_textimage_desc
+        tt_content_defValues {
+          CType = ucph_ce_textimage
+        }
+      }
+    }
+    show := addToList(ucph_ce_textimage)
+  }
+}

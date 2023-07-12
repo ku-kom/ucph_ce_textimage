@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="EXT:ucph_ce_textimage/Resources/Private/Language/locallang_be.xlf" date="2023-06-21T10:27:00Z" product-name="ucph_ce_textimage">
+        <header>
+            <authorName>Nanna Ellegaard</authorName>
+            <authorEmail>nel@adm.ku.dk</authorEmail>
+        </header>
+        <body>
+        <trans-unit id="ucph_ce_textimage_wizard_tab">
+            <source>Media</source>
+        </trans-unit>
+        <trans-unit id="ucph_ce_textimage_title">
+            <source>Text and images</source>
+        </trans-unit>
+        <trans-unit id="ucph_ce_textimage_desc">
+            <source>Any number of images wrapped right around a regular text element.</source>
+        </trans-unit>
+        <trans-unit id="ucph_ce_textimage_internal_title">
+            <source>Internal title - not displayed in the frontend</source>
+        </trans-unit>
+         <trans-unit id="ucph_ce_textimage_alt">
+            <source>Optional: Keep empty for decorative images</source>
+        </trans-unit>
+        <trans-unit id="option.extrasmall">
+            <source>Extra Small</source>
+        </trans-unit>
+        <trans-unit id="option.small">
+            <source>Small</source>
+        </trans-unit>
+        <trans-unit id="option.medium">
+            <source>Medium</source>
+        </trans-unit>
+        <trans-unit id="option.xlarge">
+            <source>Extra Large</source>
+        </trans-unit>
+        <trans-unit id="option.large">
+            <source>Large</source>
+        </trans-unit>
+        <trans-unit id="option.default">
+            <source>Default</source>
+        </trans-unit>
+        <trans-unit id="ratio.16_9">
+            <source>16:9</source>
+        </trans-unit>
+        <trans-unit id="ratio.4_3">
+            <source>4:3</source>
+        </trans-unit>
+        <trans-unit id="ratio.1_1">
+            <source>1:1</source>
+        </trans-unit>
+        <trans-unit id="ratio.free">
+            <source>Free</source>
+        </trans-unit>
+        </body>
+    </file>
+</xliff>

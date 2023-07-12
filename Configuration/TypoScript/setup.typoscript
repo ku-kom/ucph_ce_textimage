@@ -1,0 +1,45 @@
+tt_content.ucph_ce_textimage >
+# CTYPE: Image
+
+tt_content.ucph_ce_textimage =< lib.contentElement
+tt_content.ucph_ce_textimage {
+	templateName = TEXT
+    templateName.stdWrap.cObject = CASE
+    templateName.stdWrap.cObject {
+        key.field = imageorient
+        8 = TEXT
+        8.value = TextpicBelow
+        25 = TEXT
+        25.value = TextpicRight
+        26 = TEXT
+        26.value = TextpicLeft
+        125 = TEXT
+        125.value = TextpicCenteredRight
+        126 = TEXT
+        126.value = TextpicCenteredLeft
+        default = TEXT
+        default.value = TextpicAbove
+    }
+
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+            references.fieldName = image
+            folders.field = file_folder
+            sorting.field = filelink_sorting
+            as = images
+        }
+    }
+
+    templateRootPaths {
+        20 = EXT:ucph_ce_textimage/Resources/Private/Templates/
+    }
+    partialRootPaths {
+        20 = EXT:ucph_ce_textimage/Resources/Private/Partials/
+    }
+    layoutRootPaths {
+        20 = EXT:ucph_base_config/Resources/Private/Layouts/
+    }
+
+
+}

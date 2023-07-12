@@ -1,5 +1,5 @@
 tt_content.ucph_ce_textimage >
-# CTYPE: Image
+# CTYPE: Image an text
 
 tt_content.ucph_ce_textimage =< lib.contentElement
 tt_content.ucph_ce_textimage {
@@ -7,20 +7,24 @@ tt_content.ucph_ce_textimage {
     templateName.stdWrap.cObject = CASE
     templateName.stdWrap.cObject {
         key.field = imageorient
+        1 = TEXT
+        1.value = TextpicAboveRight
+        2 = TEXT
+        2.value = TextpicAboveLeft
         8 = TEXT
         8.value = TextpicBelow
+        9 = TEXT
+        9.value = TextpicBelowRight
+        10 = TEXT
+        10.value = TextpicBelowLeft
         17 = TEXT
         17.value = TextpicFloatRight
         18 = TEXT
         18.value = TextpicFloatLeft
         25 = TEXT
-        25.value = TextpicRight
+        25.value = TextpicCenteredRight
         26 = TEXT
-        26.value = TextpicLeft
-        125 = TEXT
-        125.value = TextpicCenteredRight
-        126 = TEXT
-        126.value = TextpicCenteredLeft
+        26.value = TextpicCenteredLeft
         default = TEXT
         default.value = TextpicAbove
     }
@@ -44,6 +48,5 @@ tt_content.ucph_ce_textimage {
     layoutRootPaths {
         110 = EXT:ucph_base_config/Resources/Private/Layouts/
     }
-
 
 }

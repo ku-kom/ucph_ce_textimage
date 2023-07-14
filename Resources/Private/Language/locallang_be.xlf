@@ -13,7 +13,7 @@
             <source>Text and images</source>
         </trans-unit>
         <trans-unit id="ucph_ce_textimage_desc">
-            <source>Any number of images wrapped right around a regular text element.</source>
+            <source>Any number of images in combination with regular text.</source>
         </trans-unit>
         <trans-unit id="ucph_ce_textimage_internal_title">
             <source>Internal title - not displayed in the frontend</source>

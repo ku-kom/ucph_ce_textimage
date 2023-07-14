@@ -1,6 +1,4 @@
-<?php
-
-declare(strict_types=1);
+<?php declare(strict_types=1);
 
 /*
  * This file is part of the package ucph_ce_textimage.
@@ -66,7 +64,6 @@ call_user_func(function ($extKey ='ucph_ce_textimage', $contentType ='ucph_ce_te
                 ],
                 'image' => [
                     'config' => [
-                        'minitems' => 1,
                         'appearance' => [
                             'elementBrowserType' => 'file',
                             'elementBrowserAllowed' => 'jpg,jpeg,png,svg'

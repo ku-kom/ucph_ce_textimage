@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="EXT:ucph_ce_textimage/Resources/Private/Language/locallang_be.xlf" date="2023-06-21T10:27:00Z" product-name="ucph_ce_textimage">
+    <file source-language="en" datatype="plaintext" original="EXT:ucph_content_textimage/Resources/Private/Language/locallang_be.xlf" date="2023-06-21T10:27:00Z" product-name="ucph_content_textimage">
         <header>
             <authorName>Nanna Ellegaard</authorName>
             <authorEmail>nel@adm.ku.dk</authorEmail>
         </header>
         <body>
-        <trans-unit id="ucph_ce_textimage_wizard_tab">
+        <trans-unit id="ucph_content_textimage_wizard_tab">
             <source>Media</source>
         </trans-unit>
-        <trans-unit id="ucph_ce_textimage_title">
+        <trans-unit id="ucph_content_textimage_title">
             <source>Text and images</source>
         </trans-unit>
-        <trans-unit id="ucph_ce_textimage_desc">
+        <trans-unit id="ucph_content_textimage_desc">
             <source>Any number of images in combination with regular text.</source>
         </trans-unit>
-        <trans-unit id="ucph_ce_textimage_internal_title">
+        <trans-unit id="ucph_content_textimage_internal_title">
             <source>Internal title - not displayed in the frontend</source>
         </trans-unit>
-         <trans-unit id="ucph_ce_textimage_alt">
+         <trans-unit id="ucph_content_textimage_alt">
             <source>Optional: Keep empty for decorative images</source>
         </trans-unit>
         <trans-unit id="option.extrasmall">

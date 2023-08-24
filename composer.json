@@ -1,5 +1,5 @@
 {
-    "name": "university-of-copenhagen/ucph-ce-textimage",
+    "name": "university-of-copenhagen/ucph-content-textimage",
     "type": "typo3-cms-extension",
     "description": "UCPH TYPO3 content element \"Text and Images\"",
     "authors": [{
@@ -13,12 +13,12 @@
     },
     "autoload": {
         "psr-4": {
-            "UniversityOfCopenhagen\\UcphCeTextImage\\": "Classes/"
+            "UniversityOfCopenhagen\\UcphContentTextImage\\": "Classes/"
         }
     },
     "extra": {
         "typo3/cms": {
-            "extension-key": "ucph_ce_textimage"
+            "extension-key": "ucph_content_textimage"
         }
     }
 }

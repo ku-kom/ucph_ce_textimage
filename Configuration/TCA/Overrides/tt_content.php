@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
 /*
- * This file is part of the package ucph_ce_textimage.
+ * This file is part of the package ucph_content_textimage.
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
  * June 2023 Nanna Ellegaard, University of Copenhagen.
@@ -9,23 +9,23 @@
 
 defined('TYPO3') or die();
 
-call_user_func(function ($extKey ='ucph_ce_textimage', $contentType ='ucph_ce_textimage') {
+call_user_func(function ($extKey ='ucph_content_textimage', $contentType ='ucph_content_textimage') {
     // Adds the content element to the "Type" dropdown
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
         'tt_content',
         'CType',
         [
-            'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_textimage_title',
+            'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_textimage_title',
             $contentType,
             // icon identifier
-            'ucph_ce_textimage_icon',
+            'ucph_content_textimage_icon',
         ],
         'image',
         'after'
     );
 
     // Assign icon
-    $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes'][$contentType] = 'ucph_ce_textimage_icon';
+    $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes'][$contentType] = 'ucph_content_textimage_icon';
 
     // Add Content Element
     if (!is_array($GLOBALS['TCA']['tt_content']['types'][$contentType] ?? false)) {
@@ -39,7 +39,7 @@ call_user_func(function ($extKey ='ucph_ce_textimage', $contentType ='ucph_ce_te
             'showitem' => '
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                 --palette--;;general,
-                header; LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_textimage_internal_title,image,imageorient,
+                header; LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_textimage_internal_title,image,imageorient,
                 bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
@@ -85,7 +85,7 @@ call_user_func(function ($extKey ='ucph_ce_textimage', $contentType ='ucph_ce_te
                                     ],
                                 ],
                                 'alternative' => [
-                                    'description' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_textimage_alt'
+                                    'description' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_textimage_alt'
                                 ]
                             ],
                             'types' => [

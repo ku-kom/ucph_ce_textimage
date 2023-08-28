@@ -4,7 +4,7 @@
  * This file is part of the package ucph_content_textimage.
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
- * June 2023 Nanna Ellegaard, University of Copenhagen.
+ * Aug 2023, University of Copenhagen.
  */
 
 defined('TYPO3') or die();
@@ -38,8 +38,10 @@ call_user_func(function ($extKey ='ucph_content_textimage', $contentType ='ucph_
         [
             'showitem' => '
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
-                --palette--;;general,
-                header; LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_textimage_internal_title,image,imageorient,
+            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
+                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,
+                image,
+                imageorient,
                 bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,

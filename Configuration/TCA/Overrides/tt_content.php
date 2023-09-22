@@ -66,16 +66,10 @@ call_user_func(function ($extKey ='ucph_content_textimage', $contentType ='ucph_
                 ],
                 'image' => [
                     'config' => [
+                        'maxitems' => 10,
                         'appearance' => [
                             'elementBrowserType' => 'file',
                             'elementBrowserAllowed' => 'jpg,jpeg,png,svg'
-                        ],
-                        'filter' => [
-                            0 => [
-                                'parameters' => [
-                                    'allowedFileExtensions' => 'jpg,jpeg,png,svg',
-                                ],
-                            ],
                         ],
                         'overrideChildTca' => [
                             'columns' => [
